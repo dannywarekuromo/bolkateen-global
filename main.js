@@ -3,7 +3,6 @@ var nav = document.querySelector('.nav-text');
 var hamburger = document.querySelector(".nav-ham");
 var menu = document.querySelector('.nav-list');
 var navItem = document.querySelectorAll('.nav-item');
-var navStroke = document.querySelectorAll('.nav-stroke');
 
 /**carousel variables**/
 var slideContainer = document.querySelector('.slide-container');
@@ -38,14 +37,12 @@ if(slide.clientWidth <= 1050) {
 /*add menu*/
 hamburger.addEventListener('click', () => { 
     menu.classList.toggle("active");
-    navStroke.classList.toggle("active");
 })
 
 /*remove menu*/
 navItem.forEach(item => {
     item.addEventListener('click', (e) => {
         menu.classList.remove('active');
-        navStroke.classList.remove('active')
     })
 })
 

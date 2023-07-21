@@ -69,15 +69,21 @@ li {
   list-style: none;
 }
 
-a {
+a,button {
   text-decoration: none;
   cursor: pointer;
+  outline: 0;
 }
 
-button {
+button, button:focus {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
+}
+
+.strike-through {
+  text-decoration: line-through;
 }
 
 .section {
@@ -183,10 +189,6 @@ nav {
   height: 3.2px;
   background-color:#101577fd;
   border-radius: 50px;
-}
-
-.nav-stroke .active {
-  background-color: var(--primary-clr);
 }
 
 @media (max-width: 800px) {
